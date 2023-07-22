@@ -1,0 +1,6 @@
+{
+	"watch": "src/**/*",
+	"ignore": [".vscode", ".yarn"],
+	"ext": ".ts",
+	"exec": "yarn ts-node -r tsconfig-paths/register src/index.ts"
+}

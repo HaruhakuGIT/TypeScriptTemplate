@@ -1,0 +1,34 @@
+{
+	"name": "TypeScriptTemplate",
+	"description": "Awesome TypeScript Starter Project",
+	"author": "HaruhakuGIT",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "yarn node -r tsconfig-paths/register .",
+		"start:dev": "yarn nodemon",
+		"build": "yarn rimraf dist && yarn tsc",
+		"lint": "yarn eslint src/**/*",
+		"lint:fix": "yarn eslint --fix src/**/*",
+		"format": "yarn prettier --write src/**/*",
+		"postinstall": "husky install",
+		"prepack": "pinst --disable",
+		"postpack": "pinst --enable"
+	},
+	"devDependencies": {
+		"@types/node": "*",
+		"@typescript-eslint/eslint-plugin": "^6.1.0",
+		"@typescript-eslint/parser": "^6.1.0",
+		"dotenv": "^16.3.1",
+		"eslint": "^8.45.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"husky": "^8.0.0",
+		"nodemon": "^3.0.1",
+		"pinst": "^3.0.0",
+		"prettier": "^2.8.8",
+		"rimraf": "^5.0.1",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.1.6"
+	},
+	"packageManager": "yarn@3.6.1"
+}
